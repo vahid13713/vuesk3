@@ -75,7 +75,7 @@ const isPasswordVisible = ref(false)
       cols="12"
       md="4"
       class="auth-card-v2 d-flex align-center justify-center"
-      style="background-color: rgb(var(--v-theme-surface));"
+      style=""
     >
       <VCard
         flat

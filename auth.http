@@ -1,0 +1,15 @@
+### 1. دریافت کوکی CSRF (برای احراز هویت Sanctum)
+GET http://127.0.0.1:8000/sanctum/csrf-cookie
+
+### 2. ارسال درخواست ثبت نام (Register)
+# PHPStorm به طور خودکار کوکی CSRF دریافتی از درخواست قبلی را برای این درخواست استفاده می‌کند.
+POST http://127.0.0.1:8000/api/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "phpstorm_test",
+  "email": "test@phpstorm.com",
+  "password": "password123",
+  "c_password": "password123"
+}
